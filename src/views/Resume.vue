@@ -1,26 +1,17 @@
 <template>
-  <div class="about">
+  <div class="resume">
     <Navbar/>
-    <AboutInfo/>
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue'
-import AboutInfo from '@/components/AboutInfo.vue'
-
 
 
 export default {
-  name: 'About',
+  name: 'Resume',
   components: {
-    Navbar, AboutInfo
+    Navbar
   }
 }
 </script>
-
-
-<style>
-
-
-</style>
