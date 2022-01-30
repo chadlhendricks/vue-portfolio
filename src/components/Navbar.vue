@@ -9,34 +9,34 @@
   <nav class="s-sidebar__nav">
      <ul>
         <li>
-           <a class="s-sidebar__nav-link" href="/">
+           <router-link to="/" class="s-sidebar__nav-link">
              <i class="bi bi-house-fill"></i><em>Home</em>
-           </a>
+           </router-link>
         </li>
         <li>
-           <a class="s-sidebar__nav-link" href="/about">
+           <router-link to="/about" class="s-sidebar__nav-link">
              <i class="fa fa-user"></i><em>About</em>
-           </a>
+           </router-link>
         </li>
         <li>
-           <a class="s-sidebar__nav-link" href="/resume">
+           <router-link to="/resume" class="s-sidebar__nav-link">
               <i class="bi bi-pencil-square"></i><em>Resume</em>
-           </a>
+           </router-link>
         </li>
          <li>
-           <a class="s-sidebar__nav-link" href="/projects">
+           <router-link to="/projects" class="s-sidebar__nav-link">
               <i class="bi bi-file-earmark-code-fill"></i><em>Projects</em>
-           </a>
+           </router-link>
         </li>
          <li>
-           <a class="s-sidebar__nav-link" href="/testimonials">
+           <router-link to="/testimonials" class="s-sidebar__nav-link">
               <i class="bi bi-people-fill"></i><em>Testimonials</em>
-           </a>
+           </router-link>
         </li>
          <li>
-           <a class="s-sidebar__nav-link" href="/contact">
+           <router-link to="/contact" class="s-sidebar__nav-link">
               <i class="bi bi-chat"></i><em>Contact</em>
-           </a>
+           </router-link>
         </li>
      </ul>
   </nav>

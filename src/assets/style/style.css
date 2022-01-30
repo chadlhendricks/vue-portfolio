@@ -15,34 +15,6 @@ Color Palette
 
 /* BUTTONS AND THINGS */
 
-.buttons{
-  border-radius: 65%;
-  border: none;
-  padding: 10px;
-  background-color: transparent;
-}
-
-#contactbutt1{
-  color: crimson; font-size: 30px;
-}
-
-#contactbutt2{
-  color: crimson; font-size: 30px;
-}
-
-#contactbutt3{
-  color: crimson; font-size: 30px;
-}
-
-.d-block{
-  border-radius: 25px;
-}
-
-.w-30{
-  border-radius: 50%;
-  margin-bottom: 50px;
-  padding-top: 50px;
-}
 
 /* ANIMATION, (ANIMATION TEMPLATES FROM ANIMISTA) */
 
