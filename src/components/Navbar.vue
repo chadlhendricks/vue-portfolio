@@ -1,47 +1,223 @@
 <template>
+<div class="s-layout">
+<!-- Sidebar -->
+<div class="s-layout__sidebar">
+  <a class="s-sidebar__trigger" href="#0">
+     <i class="fa fa-bars"></i>
+  </a>
 
-<header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(0, 0, 0, 1);">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#landing"><img src="../assets/images/logos/logo-1.png" width="80%"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" style="justify-content: flex-end; height: 100%;" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <router-link to="/"><i class="bi bi-house-fill"></i> Home</router-link>
-                  <router-link to="/about"><i class="bi bi-person-circle"></i> About</router-link>
-                  <router-link to="/resume"><i class="bi bi-file-richtext-fill"></i> Resume</router-link>
-                  <router-link to="/projects"><i class="bi bi-person-workspace"></i> Projects</router-link>
-                  <router-link to="/testimonials"><i class="bi bi-people-fill"></i> Testimonials</router-link>
-                  <router-link to="/contact"><i class="bi bi-chat-dots-fill"></i> Contact</router-link>
-                </ul>
-              </div>
-            </div>
-          </nav>         
-    </header>
-
+  <nav class="s-sidebar__nav">
+     <ul>
+        <li>
+           <a class="s-sidebar__nav-link" href="/">
+             <i class="bi bi-house-fill"></i><em>Home</em>
+           </a>
+        </li>
+        <li>
+           <a class="s-sidebar__nav-link" href="/about">
+             <i class="fa fa-user"></i><em>About</em>
+           </a>
+        </li>
+        <li>
+           <a class="s-sidebar__nav-link" href="/resume">
+              <i class="bi bi-pencil-square"></i><em>Resume</em>
+           </a>
+        </li>
+         <li>
+           <a class="s-sidebar__nav-link" href="/projects">
+              <i class="bi bi-file-earmark-code-fill"></i><em>Projects</em>
+           </a>
+        </li>
+         <li>
+           <a class="s-sidebar__nav-link" href="/testimonials">
+              <i class="bi bi-people-fill"></i><em>Testimonials</em>
+           </a>
+        </li>
+         <li>
+           <a class="s-sidebar__nav-link" href="/contact">
+              <i class="bi bi-chat"></i><em>Contact</em>
+           </a>
+        </li>
+     </ul>
+  </nav>
+</div>
+</div>
+      
 </template>
 
 <script>
 
-
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+
+
+*, *::before, *::after {
+   box-sizing: border-box;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.bi, .fa {
+  color: #FCA311
+  }
+
+body {
+   font-size: 1em;
+   color: #333;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+em {
+   font-style: normal;
 }
+
 a {
-  color: red;
+   text-decoration: none;
+   color: inherit;
+} 
+
+/* Layout */
+.s-layout {
+   display: flex;
+   width: 100%;
 }
+
+.s-layout__content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+}
+
+/* Sidebar Closing*/
+.s-sidebar__trigger {
+   z-index: 2;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 4em;
+   background: #000000;
+}
+
+/* Burger Menu */
+.s-sidebar__trigger > i {
+   display: inline-block;
+   margin: 1.5em 0 0 1.5em;
+   color: #FCA311;
+}
+
+/* Sidebar Expanded Color */
+.s-sidebar__nav {
+   position: fixed;
+   top: 0;
+   left: -15em;
+   overflow: hidden;
+   transition: all .3s ease-in;
+   width: 15em;
+   height: 100%;
+   background: #000000;
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.s-sidebar__nav:hover,
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:focus + .s-sidebar__nav,
+.s-sidebar__trigger:hover + .s-sidebar__nav {
+   left: 0;
+}
+
+.s-sidebar__nav ul {
+   position: absolute;
+   top: 4em;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   width: 15em;
+}
+
+.s-sidebar__nav ul li {
+   width: 100%;
+}
+
+.s-sidebar__nav-link {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 4em;
+}
+
+.s-sidebar__nav-link em {
+   position: absolute;
+   top: 50%;
+   left: 4em;
+   transform: translateY(-50%);
+}
+
+/* Sidemenu Hover */
+
+.s-sidebar__nav-link:hover {
+   background: #FCA311;
+}
+
+.s-sidebar__nav-link > i {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: inline-block;
+   width: 4em;
+   height: 4em;
+}
+
+.s-sidebar__nav-link > i::before {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* Mobile First */
+@media (min-width: 42em) {
+   .s-layout__content {
+      margin-left: 4em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      width: 4em;
+   }
+   
+   .s-sidebar__nav {
+      width: 4em;
+      left: 0;
+   }
+   
+   .s-sidebar__nav:hover,
+   .s-sidebar__nav:focus,
+   .s-sidebar__trigger:hover + .s-sidebar__nav,
+   .s-sidebar__trigger:focus + .s-sidebar__nav {
+      width: 15em;
+   }
+}
+
+@media (min-width: 68em) {
+   .s-layout__content {
+      margin-left: 15em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      display: none
+   }
+   
+   .s-sidebar__nav {
+      width: 15em;
+   }
+   
+   .s-sidebar__nav ul {
+      top: 1.3em;
+   }
+}
+
+
+
+
 </style>
