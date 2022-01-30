@@ -8,6 +8,9 @@
 
   <nav class="s-sidebar__nav">
      <ul>
+         <li>
+           <img src="../assets/images/logos/logo-1.png" id="logo" alt="Logo">
+        </li>
         <li>
            <router-link to="/" class="s-sidebar__nav-link">
              <i class="bi bi-house-fill"></i><em>Home</em>
@@ -35,7 +38,7 @@
         </li>
          <li>
            <router-link to="/contact" class="s-sidebar__nav-link">
-              <i class="bi bi-chat"></i><em>Contact</em>
+              <i class="bi bi-chat"></i><em>Contact Me</em>
            </router-link>
         </li>
      </ul>
@@ -50,6 +53,18 @@
 </script>
 
 <style scoped>
+
+#logo {
+  margin-left: 30%; 
+  background: white; 
+  border-radius: 50%; 
+  padding: 8px;
+  border: 5px solid #FCA311 ;
+  }
+
+.router-link-active {
+  color: #FCA311
+  }
 
 
 *, *::before, *::after {
@@ -155,7 +170,7 @@ a {
 /* Sidemenu Hover */
 
 .s-sidebar__nav-link:hover {
-   background: #FCA311;
+   background: #14213D;
 }
 
 .s-sidebar__nav-link > i {

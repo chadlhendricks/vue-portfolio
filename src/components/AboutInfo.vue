@@ -1,11 +1,11 @@
 <template>
-    <h1 class="headings">About</h1><br>
 
-   <div class="container-fluid">
+<section>
+  <h1 class="headings">About</h1><br>
 
-   <div class="row" id="landingpagerows" style=" padding-top: 20px;">
-
-<!-- ABOUT PAGE PICTURE -->
+  <div class="container-fluid">
+    <div class="row" id="landingpagerows" style=" padding-top: 20px;">
+    <!-- ABOUT PAGE PICTURE -->
 
     <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl" id="aboutpic">
       <img src="../assets/images/about_images/chad.png" style="text-align: center; height: 50vh;" alt="">
@@ -30,20 +30,11 @@
     </div>
 
     </div>
-  </div><br>
 
-  <!-- ABOUT PAGE TABLES -->
+  </div>
 
-      <div class="row" style="text-align: start; margin: auto; font-size: 20px; padding-top: 40px;" >
-        <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl" >
-          <div><i class="bi bi-chevron-right" style="color: red;"></i><strong>Birthday:</strong> 30 August 1997</div>
-          <div><i class="bi bi-chevron-right" style="color: red;"></i><strong>Location:</strong>Plumstead, Cape Town</div>
-          <div><i class="bi bi-chevron-right" style="color: red;"></i><strong>Age:</strong> 24</div>
-          <div><i class="bi bi-chevron-right" style="color: red;"></i><strong>Email:</strong>chadlhendricks@gmail.com</div>
-          <div><i class="bi bi-chevron-right" style="color: red;"></i><strong>Freelance:</strong> Available</div>
-        </div>
+</section>
 
-      </div>
 </template>
 
 <script>
@@ -53,5 +44,5 @@ export default {
 </script>
 
 <style>
-    
+ 
 </style>

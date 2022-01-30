@@ -13,6 +13,15 @@ Color Palette
     overflow-x: hidden;
 }
 
+.headings {
+  text-align: center;
+}
+
+section{
+  margin-left: 12.7%;
+  width: 88%;
+  }
+
 /* BUTTONS AND THINGS */
 
 
@@ -110,16 +119,11 @@ Color Palette
 
 /* MEDIA QUERIES */
 
-/* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 670px) { 
   #thursimg{
     display: none;}
-    #landingsection{
-
   }
-}
 
-/*  */
 @media (max-width: 540px) {
 
  }
@@ -132,12 +136,23 @@ Color Palette
 
 }
 
+@media (max-width: 1088px) {
+  .landingpage {
+    margin: 0;
+    width: 100%;
+  }
+
+}
+
 
 @media (max-width: 1140px) {
 
 }
 
 @media (max-width: 1400px) {
+  #landingpage {
+    margin-left: 200px
+  }
 
 }
 

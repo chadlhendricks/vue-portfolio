@@ -1,4 +1,7 @@
 <template>
+<section>
+    <h1 class="headings">Contact Me</h1><br>
+
    <div class="contactform col-sm-6" style="font-size: 20px;">
         <form action="https://formspree.io/f/xzbywdvz" method="POST">
           
@@ -26,6 +29,8 @@
         </form>
 
       </div>
+      </section>
+
 
 </template>
 
