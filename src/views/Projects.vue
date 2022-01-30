@@ -1,21 +1,21 @@
 <template>
   <div class="projects">
     <Navbar/>
-    <ProjectsList/>
+    <ListProjects/>
 
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue'
-import ProjectsList from '@/components/ProjectsList.vue'
+import ListProjects from '@/components/ListProjects.vue'
 
 
 
 export default {
   name: 'Projects',
   components: {
-    Navbar, ProjectsList
+    Navbar, ListProjects
   }
 }
 </script>
