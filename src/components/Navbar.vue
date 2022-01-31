@@ -9,7 +9,7 @@
   <nav class="s-sidebar__nav">
      <ul>
          <li>
-           <img src="../assets/images/logos/logo-1.png" id="logo" alt="Logo">
+           <img src="../assets/images/logos/logo-1.png" id="logo" alt="Logo" style="margin-top: 50px; margin-bottom: 50px">
         </li>
         <li>
            <router-link to="/" class="s-sidebar__nav-link">

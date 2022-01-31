@@ -18,7 +18,7 @@
 
 <!-- LANDING PAGE PICTURE -->
            <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
-                 <img src="../assets/images/landing_images/thurs1.png" style="height: 100vh; width: 100%; object-fit: cover;" id="thursimg" alt="">
+                 <img src="../assets/images/landing_images/thurs1.png" style="height: 100vh; width: 100%; object-fit: cover; " id="thursimg" alt="">
            </div>
           </div>
 
@@ -41,6 +41,8 @@ export default {
     background-attachment:fixed;
     width: 100%;
     margin-left: 240px;
+
+    background-color: black;
 }
 
 .row{

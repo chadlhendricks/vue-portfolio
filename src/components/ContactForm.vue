@@ -1,5 +1,6 @@
 <template>
 <section>
+  <div class="sections">
     <h1 class="headings">Contact Me</h1><br>
 
    <div class="contactform col-sm-6" style="font-size: 20px;">
@@ -29,7 +30,8 @@
         </form>
 
       </div>
-      </section>
+      </div>
+</section>
 
 
 </template>
@@ -57,11 +59,15 @@ export default {
     
 }
 </script>
-<style>
+<style scoped>
 .contactform.col-sm-6 {
     padding-top: 100px;
     margin: auto;
     width: 80%;
+}
+
+label {
+  color: white;
 }
    
 </style>

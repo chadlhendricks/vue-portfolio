@@ -1,8 +1,6 @@
 <template>
-  <div class="about">
     <Navbar/>
     <AboutInfo/>
-  </div>
 </template>
 
 <script>

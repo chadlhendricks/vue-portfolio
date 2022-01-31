@@ -1,9 +1,6 @@
 <template>
-  <div class="projects">
     <Navbar/>
     <ListProjects/>
-
-  </div>
 </template>
 
 <script>
