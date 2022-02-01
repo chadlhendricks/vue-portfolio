@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .landingpage {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.322), rgb(20, 0, 0)),

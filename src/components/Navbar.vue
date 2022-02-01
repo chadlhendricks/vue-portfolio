@@ -131,6 +131,7 @@ a {
    height: 100%;
    background: #000000;
    color: rgba(255, 255, 255, 0.7);
+   z-index: 100;
 }
 
 .s-sidebar__nav:hover,

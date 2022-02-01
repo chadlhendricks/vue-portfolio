@@ -3,86 +3,73 @@
 <section>
      <div class="sections">
         <h1 class="headings">Testimonials</h1><br>
+     </div> 
 
-<div class="col-lg-10 offset-lg-1 pt-5 pb-5 bg-dark text-light">
-  <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="height:200px;">
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active text-center p-4">
-        <blockquote class="blockquote text-center">
-          <p class="mb-0"><i class="fa fa-quote-left"></i> Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.
-          </p>
-          <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
-          <!-- Client review stars -->
-          <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
-          <p class="client-review-stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-            <i class="far fa-star"></i>
-          </p>
-        </blockquote>
-      </div>
-      <div class="carousel-item text-center p-4">
-        <blockquote class="blockquote text-center">
-          <p class="mb-0"><i class="fa fa-quote-left"></i> Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.
-          </p>
-          <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
-          <!-- Client review stars -->
-          <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
-          <p class="client-review-stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </p>
-        </blockquote>
-      </div>
-      <div class="carousel-item text-center p-4">
-        <blockquote class="blockquote text-center">
-          <p class="mb-0"><i class="fa fa-quote-left"></i> A person who never made a mistake never tried anything new.
-          </p>
-          <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
-          <!-- Client review stars -->
-          <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
-          <p class="client-review-stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </p>
-        </blockquote>
-      </div>
-    </div>
-    <ol class="carousel-indicators">
-      <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
-      <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
-    </ol>
-  </div>
-</div>
+     <MDBCarousel
+    v-model="carousel1"
+    :items="items1"
+    fade
+  />
 
 
-
-
-
-  </div> 
 </section>
 
 </template>
 
 <script>
 
-export default {
-  mounted() {
-  }
-};
+import { ref } from "vue";
+  import { MDBCarousel } from "mdb-vue-ui-kit";
+  export default {
+    components: {
+      MDBCarousel
+    },
+    setup() {
+      const items1 = [
+        {
+          src: "https://user-images.githubusercontent.com/7884263/27209183-2f456e10-51ff-11e7-9ec3-847038a795ea.png",
+          alt: "Sergio Rodgers",
+          label: "- Sergio Rodgers",
+          caption: "In the short time I’ve know Chad I’ve come to see how good he is at adapting to new things and how good he is at socialising with peers. Chad is an amazing Individual that is committed and he would be an amazing asset to any company.Nulla vitae elit libero, a pharetra augue mollis interdum."
+        },
+        {
+          src: "https://user-images.githubusercontent.com/7884263/27209183-2f456e10-51ff-11e7-9ec3-847038a795ea.png",
+          alt: "Daryll Grainger",
+          label: "- Daryll Grainger",
+          caption: "Chad is great at what he does.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+          src: "https://user-images.githubusercontent.com/7884263/27209183-2f456e10-51ff-11e7-9ec3-847038a795ea.png",
+          alt: "Siyanda Ncamazana",
+          label: "- Siyanda Ncamazana",
+          caption:
+            "Chad is an extremely hard worker and is open minded learning new things. He is not afraid of challenges and is willing to go the extra mile.Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+        },
+        {
+          src: "https://user-images.githubusercontent.com/7884263/27209183-2f456e10-51ff-11e7-9ec3-847038a795ea.png",
+          alt: "Siyabonga Mkhosana",
+          label: "Siyabonga Mkhosana",
+          caption:
+            "Chad Hendricks has shown a capacity to learn quick and work efficiency, has a good work ethic and ability to work in a team. Very dependable and committed."
+        },
+        {
+          src: "https://user-images.githubusercontent.com/7884263/27209183-2f456e10-51ff-11e7-9ec3-847038a795ea.png",
+          alt: "Godwin Dzvapatsva",
+          label: "- Godwin Dzvapatsva -Head of Curriculum and Learning",
+          caption:
+            "Chad has the potential to do well is his studies."
+        }
+      ];
+      const carousel1 = ref(0);
+      return {
+        items1, carousel1
+      };
+    }
+  };
 
 </script>
 
 <style scoped>
 
-#client-testimonial-carousel {min-height: 200px;}
+
 </style>
