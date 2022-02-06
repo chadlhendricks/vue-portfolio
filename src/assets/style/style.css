@@ -39,6 +39,7 @@ section{
   }
 
 .sections{
+  padding-left: 80px;
   height: 100vh;
   backdrop-filter: blur(7px);
 
@@ -145,11 +146,12 @@ section{
 /* MEDIA QUERIES */
 
 @media (max-width: 670px) { 
-  #landingpage {
+  .sections{
+    margin-top: 60px
   }
 
   .sections{
-    margin-top: 60px
+    padding-left: 0;
   }
 
   #thursimg{
@@ -162,6 +164,13 @@ section{
  }
 
 @media (max-width: 720px) {
+
+}
+
+@media (max-width: 790px) {
+  #landingpage {
+    padding-left: 20px;
+  }
 
 }
 

@@ -9,19 +9,19 @@
     <div class="row" style="text-align: center">
       <div class=col-4>
         <i class="bi bi-geo-alt"></i><br>
-        <p>Location</p>
+        <p class="titles">Location</p>
         <p>Cape Town, South Africa  </p>
       </div>
 
       <div class=col-4>
         <i class="bi bi-envelope"></i><br>
-        <p>Email</p>
+        <p class="titles">Email</p>
         <p>chadlhendricks@gmail.com</p>
       </div>
 
       <div class=col-4>
         <i class="bi bi-phone"></i><br>
-        <p>Call Me On</p>
+        <p class="titles">Call Me On</p>
         <p>+27 67 020 2386</p>
       </div>
     </div>
@@ -74,6 +74,10 @@
 </script>
 
 <style scoped>
+
+.titles{
+  color: #fca311ff;
+}
 
 #messagebox{
   height: 100px;
