@@ -79,6 +79,11 @@
   height: 100px;
 }
 
+input{
+  border-radius: 25px;
+  border: none;
+}
+
 .row{
   color: white;
   text-align: ce;
