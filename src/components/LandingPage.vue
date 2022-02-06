@@ -1,7 +1,6 @@
 <template>
-    <div class="background"></div>
-
-    <div class="landingpage">    
+    <section class="background">
+          <div class="sections" id="landingpage">    
         <div class="container-fluid" >
           <div class="row">
 
@@ -22,8 +21,12 @@
            </div>
           </div>
 
-        </div>        
-    </div>
+        </div>   
+        </div>  
+
+  
+
+    </section>
 </template>
 
 <script>
@@ -34,15 +37,12 @@ export default {
 
 <style scoped>
 
-.landingpage {
+.background{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.322), rgb(20, 0, 0)),
     url(../assets/images/landing_images/backgroundimage-1.png);
     background-size: cover;
     background-attachment:fixed;
     width: 100%;
-    margin-left: 240px;
-
-    background-color: black;
 }
 
 .row{
