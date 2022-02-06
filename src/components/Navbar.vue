@@ -54,16 +54,25 @@
 
 <style scoped>
 
+/* CSS HEX 
+--black: #000000ff;
+--oxford-blue: #14213dff;
+--orange-web: #fca311ff;
+--platinum: #e5e5e5ff;
+--white: #ffffffff;
+*/
+
+
 #logo {
   margin-left: 30%; 
   background: white; 
   border-radius: 50%; 
   padding: 8px;
-  border: 5px solid #FCA311 ;
+  border: 5px solid #14213dff ;
   }
 
 .router-link-active {
-  color: #FCA311
+  color: #fca311ff
   }
 
 
@@ -72,7 +81,7 @@
 }
 
 .bi, .fa {
-  color: #FCA311
+  color: #fca311ff
   }
 
 body {
@@ -110,14 +119,14 @@ a {
    left: 0;
    width: 100%;
    height: 4em;
-   background: #000000;
+   background: black;
 }
 
 /* Burger Menu */
 .s-sidebar__trigger > i {
    display: inline-block;
    margin: 1.5em 0 0 1.5em;
-   color: #FCA311;
+   color: #fca311ff;
 }
 
 /* Sidebar Expanded Color */
@@ -171,7 +180,7 @@ a {
 /* Sidemenu Hover */
 
 .s-sidebar__nav-link:hover {
-   background: #14213D;
+   background: #14213dff;
 }
 
 .s-sidebar__nav-link > i {

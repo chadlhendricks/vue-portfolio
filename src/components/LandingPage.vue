@@ -7,8 +7,8 @@
 <!-- LANDING HEADINGS -->
 
            <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl" id="landingsection" style="padding-top: 18%; text-align: center; ">
-               <h1 style="font-size: 68px; color: #FCA311; font-weight: bold;" class="chadheading"><strong>Chad Liam Hendricks</strong></h1><br>
-               <h2 style="font-size: 30px; color: #E5E5E5"><strong>Aspiring Full-Stack Developer</strong></h2><br>
+               <h1 style="font-size: 68px; color: #fca311ff; font-weight: bold;" class="chadheading"><strong>Chad Liam Hendricks</strong></h1><br>
+               <h2 style="font-size: 30px; color: #e5e5e5ff"><strong>Aspiring Full-Stack Developer</strong></h2><br>
 
 
                <a href="https://www.linkedin.com/in/chad-hendricks-a7984921b/" target="_blank"><i class="bi bi-linkedin" style="font-size: 40px; color: #FFFFFF; border: none;"></i></a>

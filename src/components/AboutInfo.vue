@@ -8,8 +8,8 @@
     <div class="row" id="landingpagerows" style=" padding-top: 20px;">
     <!-- ABOUT PAGE PICTURE -->
 
-    <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl" id="aboutpic">
-      <img src="../assets/images/about_images/chad.png" style="text-align: center; height: 60vh; width: 80%; border-radius: 50%; border: 6px #FCA311 solid" alt="">
+    <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
+      <img src="../assets/images/about_images/chad.png" id='aboutpic' style="" alt="">
     </div>
 
 <!-- ABOUT PAGE PARAGRAPHS -->
@@ -47,9 +47,14 @@ export default {
 }
 </script>
 
-<style>
-#aboutpic {
+<style scoped>
+#aboutpic{
+  text-align: center; 
+  height: 60vh; 
+  width: 80%; 
+  border-radius: 50%; 
+  }
 
-}
+
  
 </style>

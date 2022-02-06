@@ -9,23 +9,29 @@
       <div id="content">
         <ul class="timeline-1 text-black">
           <li class="event" data-date="12:30 - 1:00pm">
-            <h4 class="mb-3">Registration</h4>
-            <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+            <h4 class="mb-3">2015</h4>
+            <p>Plumstead High School<br></p>
+            <p>Graduated with a National Senior Certificate (NSC)</p>
           </li>
           <li class="event" data-date="2:30 - 4:00pm">
-            <h4 class="mb-3 pt-3">Opening Ceremony</h4>
-            <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta
-              Rhymes as an opening show.</p>
+            <h4 class="mb-3 pt-3">August 2017 - February 2018</h4>
+            <p>Blackburns Pharmacy<br></p>
+            <p>Role: Data Capturer</p>
           </li>
           <li class="event" data-date="5:00 - 8:00pm">
-            <h4 class="mb-3 pt-3">Main Event</h4>
-            <p>This is where it all goes down. You will compete head to head with your friends and rivals. Get
-              ready!</p>
+            <h4 class="mb-3 pt-3">June 2018 - August 2021</h4>
+            <p>Amazon Development Center<br></p>
+            <p>Role: Account Management Specialist</p>
           </li>
           <li class="event" data-date="8:30 - 9:30pm">
-            <h4 class="mb-3 pt-3">Closing Ceremony</h4>
-            <p class="mb-0">See how is the victor and who are the losers. The big stage is where the winners bask in their
-              own glory.</p>
+            <h4 class="mb-3 pt-3">February 2020 - December 2020</h4>
+            <p>Damelin<br></p>
+            <p>Information and Technology (I.T) Course</p>
+          </li>
+           <li class="event" data-date="8:30 - 9:30pm">
+            <h4 class="mb-3 pt-3">September 2021 - Present</h4>
+            <p>Life Choices Coding Academy<br></p>
+            <p>Full-Stack Developer Course</p>
           </li>
         </ul>
       </div>
@@ -119,12 +125,25 @@ Color Palette
 #E5E5E5 - Grey
 #FFFFFF - White
 */
+.row{
+    color: white;
+
+
+}
+
+h2{
+    color: #fca311ff;
+}
+
+h4 {
+  color: #fca311ff;
+}
 
 .timeline-1 {
-  border-left: 3px solid #FCA311;
+  border-left: 3px solid #fca311ff;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
-  background: rgba(177, 99, 163, 0.09);
+  background: rgba(177, 99, 163, 0.048);
   margin: 0 auto;
   position: relative;
   padding: 50px;

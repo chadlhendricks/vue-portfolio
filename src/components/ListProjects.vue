@@ -11,9 +11,7 @@
           <img class="card-img-top" src="../assets/images/project_images/fahcelsconvertor.png" alt="Card image cap" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title">Fahrenheit to Celsius Convertor</h5>
-            <p class="card-text">Languages used:<br> 
-              HTML<br>
-              CSS<br><br>
+            <p class="card-text">A Temperature Convertor I made using Javascript 
             </p>
             <a href="https://github.com/chadlhendricks/my-design-bootstrap" target="_blank" class="btn btn-danger"><i class="bi bi-github" style="font-size: 30px ;color: white; border:none"></i></a>
             <a href="https://optimistic-einstein-6a5fd3.netlify.app/" target="_blank" class="btn btn-danger" style="display: inline-block;"><img src="../assets/images/logos/netlify.png" style="height: 45px; width: 35px ;"></a>
@@ -27,7 +25,7 @@
           <img class="card-img-top" src="../assets/images/project_images/ecommerce.png" alt="Card image cap" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title">eCommerce Store</h5>
-            <p class="card-text">A simple animation I made in CSS, pitting two of the fastest boys against one another.</p><br>
+            <p class="card-text">A simple eCommerce store I made with a cart functionality.</p><br>
             <a href="https://github.com/chadlhendricks/superturtlevsluigi" target="_blank" class="btn btn-danger" style="display: inline-block;"><i class="bi bi-github" style="font-size: 30px ;color: white; border:none"></i></a>
             <a href="https://dreamy-austin-afd27e.netlify.app" target="_blank" class="btn btn-danger" style="display: inline-block;"><img src="../assets/images/logos/netlify.png" style="height: 45px; width: 35px ;" alt=""></a>
           </div>
@@ -59,7 +57,7 @@
         <div class="card" style="width: 100%; border: none;">
           <img class="card-img-top" src="../assets/images/project_images/bootstrap.png" alt="Card image cap" style="height: 300px;">
           <div class="card-body">
-            <h5 class="card-title">A website I designed</h5>
+            <h5 class="card-title">Demo website</h5>
             <p class="card-text">Languages used:<br> 
               HTML<br>
               CSS<br><br>
@@ -76,7 +74,7 @@
           <img class="card-img-top" src="../assets/images/project_images/mario.png" alt="Card image cap" style="height: 300px;">
           <div class="card-body">
             <h5 class="card-title">Super Turtle vs. Luigi</h5>
-            <p class="card-text">A simple animation I made in CSS, pitting two of the fastest boys against one another.</p><br>
+            <p class="card-text">An animation I made in CSS, pitting two of the fastest boys against one another.</p><br>
             <a href="https://github.com/chadlhendricks/superturtlevsluigi" target="_blank" class="btn btn-danger" style="display: inline-block;"><i class="bi bi-github" style="font-size: 30px ;color: white; border:none"></i></a>
             <a href="https://dreamy-austin-afd27e.netlify.app" target="_blank" class="btn btn-danger" style="display: inline-block;"><img src="../assets/images/logos/netlify.png" style="height: 45px; width: 35px ;" alt=""></a>
           </div>
