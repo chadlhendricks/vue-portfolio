@@ -1,25 +1,54 @@
 <template>
-<section>
-   <div class="sections">
+  <section>
+    <div class="sections">
+      <h1 class="headings">Projects</h1>
+      <br />
 
-        <h1 class="headings">Projects</h1><br>
-
-        <div class="row" style="text-align: center; width: 80%; margin: auto; color: white; padding-top: 20px;">
-
-      <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
-        <div class="card" style="width: 100%; border: none;">
-          <img class="card-img-top" src="../assets/images/project_images/fahcelsconvertor.png" alt="Card image cap" style="height: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">Fahrenheit to Celsius Convertor</h5>
-            <p class="card-text">A Temperature Convertor I made using Javascript 
-            </p>
-            <a href="https://github.com/chadlhendricks/my-design-bootstrap" target="_blank" class="btn btn-danger"><i class="bi bi-github" style="font-size: 30px ;color: white; border:none"></i></a>
-            <a href="https://optimistic-einstein-6a5fd3.netlify.app/" target="_blank" class="btn btn-danger" style="display: inline-block;"><img src="../assets/images/logos/netlify.png" style="height: 45px; width: 35px ;"></a>
-
+      <div
+        class="row"
+        style="
+          text-align: center;
+          width: 80%;
+          margin: auto;
+          color: white;
+          padding-top: 20px;
+        "
+      >
+        <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
+          <div
+            class="card"
+            style="width: 100%; border: none"
+            v-for="(project, index) in projects"
+            :key="index"
+          >
+            <img
+              class="card-img-top"
+              src="../assets/images/project_images/fahcelsconvertor.png"
+              alt="Card image cap"
+              style="height: 300px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ project.projname }}</h5>
+              <p class="card-text">{{ project.projdesc }}</p>
+              <a :href="project.github" target="_blank" class="btn btn-danger"
+                ><i
+                  class="bi bi-github"
+                  style="font-size: 30px; color: white; border: none"
+                ></i
+              ></a>
+              <a
+                :href="project.netlify"
+                target="_blank"
+                class="btn btn-danger"
+                style="display: inline-block"
+                ><img
+                  src="../assets/images/logos/netlify.png"
+                  style="height: 45px; width: 35px"
+              /></a>
+            </div>
           </div>
-        </div>
 
-      </div>
+          <!-- </div>
       <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
         <div class="card" style="width: 100%; border: none;">
           <img class="card-img-top" src="../assets/images/project_images/ecommerce.png" alt="Card image cap" style="height: 300px;">
@@ -49,9 +78,9 @@
         </div>
       </div>
 
-    </div><br>
+    </div><br> -->
 
-        <div class="row" style="text-align: center; width: 80%; margin: auto; color: white; padding-top: 20px;">
+          <!-- <div class="row" style="text-align: center; width: 80%; margin: auto; color: white; padding-top: 20px;">
 
       <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
         <div class="card" style="width: 100%; border: none;">
@@ -98,28 +127,44 @@
         </div>
       </div>
 
-    </div><br>
-
-    
- 
-   </div>
-</section>
-
+    </div><br> -->
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-    
-}
+  data() {
+    return {
+      projects: null,
+    };
+  },
+  mounted() {
+    fetch("https://thurs-app.herokuapp.com/projects")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+
+        this.projects = data;
+      });
+  },
+};
 </script>
 
-<style scoped> 
-.card{
-    color: #FCA311;
+<style scoped>
+.card {
+  color: #fca311;
 }
 
-p{
-        color: grey
+p {
+  color: grey;
 }
- 
+
+.card-img-top {
+  height: 300px;
+}
 </style>
