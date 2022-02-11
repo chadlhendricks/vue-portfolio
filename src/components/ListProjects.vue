@@ -142,7 +142,7 @@ export default {
     };
   },
   mounted() {
-    fetch("https://thurs-app.herokuapp.com/projects")
+    fetch("http://localhost:5000/projects")
       .then((response) => {
         return response.json();
       })

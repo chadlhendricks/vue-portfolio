@@ -10,11 +10,11 @@ import AboutInfo from '@/components/AboutInfo.vue'
 
 
 
+
 export default {
   name: 'About',
   components: {
-    Navbar, AboutInfo
-  }
+    Navbar, AboutInfo,  }
 }
 </script>
 

@@ -137,12 +137,12 @@
             ></div>
           </div>
           <i class="bi bi-chevron-right" style="color: red"></i>Javascript
-          (40%)<br />
+          (60%)<br />
           <div class="progress">
             <div
               class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
               role="progressbar"
-              style="width: 40%"
+              style="width: 60%"
               aria-valuenow="100"
               aria-valuemin="0"
               aria-valuemax="100"

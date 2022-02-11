@@ -11,8 +11,8 @@
                <h2 style="font-size: 30px; color: #e5e5e5ff"><strong>Aspiring Full-Stack Developer</strong></h2><br>
 
 
-               <a href="https://www.linkedin.com/in/chad-hendricks-a7984921b/" target="_blank"><i class="bi bi-linkedin" style="font-size: 40px; color: #FFFFFF; border: none;"></i></a>
-               <a href="https://github.com/chadlhendricks" target="_blank"><i class="bi bi-github" style="font-size: 40px; color: #FFFFFF; border: none; margin-left: 10px;"></i></a>
+               <a href="https://www.linkedin.com/in/chad-hendricks-a7984921b/" target="_blank"><i class="bi bi-linkedin" style="font-size: 40px; color: crimson; border: none;"></i></a>
+               <a href="https://github.com/chadlhendricks" target="_blank"><i class="bi bi-github" style="font-size: 40px; color: crimson; border: none; margin-left: 10px;"></i></a>
            </div>
 
 <!-- LANDING PAGE PICTURE -->

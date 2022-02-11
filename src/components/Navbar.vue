@@ -180,7 +180,8 @@ a {
 /* Sidemenu Hover */
 
 .s-sidebar__nav-link:hover {
-   background: #14213dff;
+   background: red;
+   color: white                                                                                                                                             ;
 }
 
 .s-sidebar__nav-link > i {
