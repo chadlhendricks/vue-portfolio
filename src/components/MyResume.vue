@@ -185,7 +185,7 @@ export default {
     };
   },
   mounted() {
-    fetch("http://localhost:5000/resumes")
+    fetch("https://thurs-app.herokuapp.com/resumes")
       .then((response) => {
         return response.json();
       })
