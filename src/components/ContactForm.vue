@@ -54,6 +54,8 @@
 
           <div class="mb-3 form-check" style="text-align:center">
             <button type="submit" class="btn btn-danger">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+
           </div>
   
         </form>
@@ -107,7 +109,7 @@ label {
 /* BUTTONS AND THINGS */
 
 .bi{
-  color: #fca311ff;
+  color: crimson;
   font-size: 35px
 }
 

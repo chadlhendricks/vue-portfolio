@@ -8,7 +8,7 @@
         class="row"
         style="
           text-align: center;
-          width: 80%;
+          width: 100%;
           margin: auto;
           color: white;
           padding-top: 20px;
@@ -17,19 +17,20 @@
         <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
           <div
             class="card"
-            style="width: 100%; border: none"
+            style="width: 30%; border: none; display: inline-block; margin-right: 50px; margin-bottom: 50px "
             v-for="(project, index) in projects"
             :key="index"
           >
             <img
               class="card-img-top"
-              src="../assets/images/project_images/fahcelsconvertor.png"
+              :src="project.img"
               alt="Card image cap"
               style="height: 300px"
             />
-            <div class="card-body">
+            <div class="card-body" style="height: 250px">
               <h5 class="card-title">{{ project.projname }}</h5>
               <p class="card-text">{{ project.projdesc }}</p>
+            <div class="card-buttons">
               <a :href="project.github" target="_blank" class="btn btn-danger"
                 ><i
                   class="bi bi-github"
@@ -44,90 +45,10 @@
                 ><img
                   src="../assets/images/logos/netlify.png"
                   style="height: 45px; width: 35px"
-              /></a>
+             ></a>
+            </div>
             </div>
           </div>
-
-          <!-- </div>
-      <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
-        <div class="card" style="width: 100%; border: none;">
-          <img class="card-img-top" src="../assets/images/project_images/ecommerce.png" alt="Card image cap" style="height: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">eCommerce Store</h5>
-            <p class="card-text">A simple eCommerce store I made with a cart functionality.</p><br>
-            <a href="https://github.com/chadlhendricks/superturtlevsluigi" target="_blank" class="btn btn-danger" style="display: inline-block;"><i class="bi bi-github" style="font-size: 30px ;color: white; border:none"></i></a>
-            <a href="https://dreamy-austin-afd27e.netlify.app" target="_blank" class="btn btn-danger" style="display: inline-block;"><img src="../assets/images/logos/netlify.png" style="height: 45px; width: 35px ;" alt=""></a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
-        <div class="card" style="width: 100%; border: none;">
-          <img class="card-img-top" src="../assets/images/project_images/calculators.png" alt="Card image cap" style="height: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">Calculator</h5>
-            <p class="card-text">Languages used:<br>
-              HTML<br>
-              CSS<br>
-              JS
-            </p>
-            <a href="https://github.com/chadlhendricks/calculator" target="_blank" class="btn btn-danger" style="display: inline-block;"><i class="bi bi-github" style="font-size: 30px ;color: white; border:none"></i></a>
-            <a href="https://youthful-wing-31cda1.netlify.app/" target="_blank" class="btn btn-danger" style="display: inline-block;"><img src="../assets/images/logos/netlify.png" style="height: 45px; width: 35px ;" alt=""></a>
-          </div>
-        </div>
-      </div>
-
-    </div><br> -->
-
-          <!-- <div class="row" style="text-align: center; width: 80%; margin: auto; color: white; padding-top: 20px;">
-
-      <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
-        <div class="card" style="width: 100%; border: none;">
-          <img class="card-img-top" src="../assets/images/project_images/bootstrap.png" alt="Card image cap" style="height: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">Demo website</h5>
-            <p class="card-text">Languages used:<br> 
-              HTML<br>
-              CSS<br><br>
-            </p>
-            <a href="https://github.com/chadlhendricks/my-design-bootstrap" target="_blank" class="btn btn-danger"><i class="bi bi-github" style="font-size: 30px ;color: white; border:none"></i></a>
-            <a href="https://optimistic-einstein-6a5fd3.netlify.app/" target="_blank" class="btn btn-danger" style="display: inline-block;"><img src="../assets/images/logos/netlify.png" style="height: 45px; width: 35px ;"></a>
-
-          </div>
-        </div>
-
-      </div>
-      <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
-        <div class="card" style="width: 100%; border: none;">
-          <img class="card-img-top" src="../assets/images/project_images/mario.png" alt="Card image cap" style="height: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">Super Turtle vs. Luigi</h5>
-            <p class="card-text">An animation I made in CSS, pitting two of the fastest boys against one another.</p><br>
-            <a href="https://github.com/chadlhendricks/superturtlevsluigi" target="_blank" class="btn btn-danger" style="display: inline-block;"><i class="bi bi-github" style="font-size: 30px ;color: white; border:none"></i></a>
-            <a href="https://dreamy-austin-afd27e.netlify.app" target="_blank" class="btn btn-danger" style="display: inline-block;"><img src="../assets/images/logos/netlify.png" style="height: 45px; width: 35px ;" alt=""></a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
-        <div class="card" style="width: 100%; border: none;">
-          <img class="card-img-top" src="../assets/images/project_images/calculators.png" alt="Card image cap" style="height: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">Calculator</h5>
-            <p class="card-text">Languages used:<br>
-              HTML<br>
-              CSS<br>
-              JS
-            </p>
-            <a href="https://github.com/chadlhendricks/calculator" target="_blank" class="btn btn-danger" style="display: inline-block;"><i class="bi bi-github" style="font-size: 30px ;color: white; border:none"></i></a>
-            <a href="https://youthful-wing-31cda1.netlify.app/" target="_blank" class="btn btn-danger" style="display: inline-block;"><img src="../assets/images/logos/netlify.png" style="height: 45px; width: 35px ;" alt=""></a>
-          </div>
-        </div>
-      </div>
-
-    </div><br> -->
         </div>
       </div>
     </div>
@@ -156,6 +77,13 @@ export default {
 </script>
 
 <style scoped>
+
+.card-buttons{
+  position: absolute;
+  right:    0;
+  bottom:   0;
+}
+
 .card {
   color: #fca311;
 }
