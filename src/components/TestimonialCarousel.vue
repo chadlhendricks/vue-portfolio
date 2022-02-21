@@ -53,6 +53,10 @@ export default {
 
 <style scoped>
 
+.col-md-4:hover{
+  transform: scale(1.1); 
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #49474f
