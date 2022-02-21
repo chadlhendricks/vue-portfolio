@@ -80,6 +80,9 @@ export default {
 </script>
 
 <style scoped>
+.col-md-4 .mb-5{
+  margin: 0;
+}
 .card-buttons {
   position: absolute;
   bottom: 0;

@@ -10,7 +10,7 @@
   <!--   Testimonial 1 -->
   <div class="col-md-4 mb-5" v-for="(testimonial, index) in testimonials" :key="index">
     <div class="testimonials-wrapper">
-      <h4>{{testimonial.caption}}</h4>
+      <h4>"{{testimonial.caption}}"</h4>
       <div class="testimonials-blob"></div>
       <div class="testimonials-img"><img :src="testimonial.src" style="width:100%"></div>
       <div class="testimonials-person-info">
@@ -95,10 +95,10 @@ body {
   height: 100px;
   margin-bottom: 10px;
   margin-left: -50px;
-  box-shadow: 0 0 0 5px #171719;
+  box-shadow: 0 0 0 5px crimson; 
   transition: all ease-out .5s;
   transform: translateY(-30%);
-  filter: brightness(2)
+  filter: brightness(1.2)
 }
 
 .testimonial-carousel .active .testimonials-img {

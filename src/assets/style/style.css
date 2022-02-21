@@ -6,6 +6,10 @@
 --white: #ffffffff;
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Comfortaa";

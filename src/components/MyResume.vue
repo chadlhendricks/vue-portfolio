@@ -12,7 +12,7 @@
               <ul class="timeline-1 text-black">
                 <li class="event" v-for="(resume, index) in resumes" :key="index">
                   <h4 class="mb-3"><i class="bi bi-arrow-return-right"></i>  {{ resume.year }}</h4>
-                  <p style="color: crimson; font-size: 20px;"><i class="bi bi-circle-fill"></i>&nbsp{{ resume.institution }}<br /></p>
+                  <p style="color: crimson; font-size: 20px;"><i class="bi bi-filter-left"></i>&nbsp{{ resume.institution }}<br /></p>
                   <p>{{ resume.role }}</p>
                 </li>
               </ul>
