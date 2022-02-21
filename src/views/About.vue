@@ -1,8 +1,6 @@
 <template>
     <Navbar/>
     <AboutInfo/>
-    <Footer/>
-
 </template>
 
 <script>

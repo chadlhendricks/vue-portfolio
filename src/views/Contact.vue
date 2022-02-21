@@ -1,8 +1,6 @@
 <template>
   <Navbar/>
   <ContactForm/>
-  <Footer/>
-
 </template>
 
 <script>
