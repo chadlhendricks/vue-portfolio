@@ -223,7 +223,7 @@ h4 {
   border-left: 3px solid #fca311ff;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
-  background: rgba(177, 99, 163, 0.048);
+  background: rgba(175, 40, 6, 0.048);
   margin: 0 auto;
   position: relative;
   padding: 50px;
