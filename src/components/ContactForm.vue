@@ -30,9 +30,16 @@
 
     <!-- END OF CONTACT BUTTONS-->
 
-    <!-- FORM-->
+       <!-- <div class="contactform col-sm-6" style="font-size: 20px;"> -->
+
+       <!-- <form action="https://formspree.io/f/xzbywdvz" method="POST"> -->
+
+
+
+    <!-- FORM  -->
    <div class="contactform col-sm-6" style="font-size: 20px;">
-        <form action="https://formspree.io/f/xzbywdvz" method="POST">
+
+        <form @submit.prevent="handleSubmit">
           
           <div class="row">
             <div class="mb-3 col-6">
@@ -53,7 +60,7 @@
           </div><br>
 
           <div class="mb-3 form-check" style="text-align:center">
-            <button type="submit" class="btn btn-danger">Submit</button>
+            <button type="submit" class="btn btn-warning">Submit</button>
             <button type="reset" class="btn btn-danger">Reset</button>
 
           </div>
@@ -71,6 +78,8 @@
 
 
 <script>
+
+
 
 
 </script>

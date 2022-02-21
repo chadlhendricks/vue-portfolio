@@ -3,7 +3,26 @@
 <section>
      <div class="sections">
         <h1 class="headings">Testimonials</h1><br>
+
+     <div class="owl-carousel testimonial-carousel">
+  <!--   Start Testimonials -->
+
+  <!--   Testimonial 1 -->
+  <div class="single-testimonial" v-for="(testimonial, index) in testimonials" :key="index">
+    <div class="testimonials-wrapper">
+      <h4>{{testimonial.caption}}</h4>
+      <div class="testimonials-blob"></div>
+      <div class="testimonials-img"><img :src="testimonial.src" style="width:100%"></div>
+      <div class="testimonials-person-info">
+        <p><b>{{testimonial.label}}</b></p>
+      </div>
+    </div>
+  </div>
+  <!--   End Testimonials -->
+</div>
+
      </div> 
+
 
 
 </section>
@@ -11,59 +30,171 @@
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      testimonials: null,
+    };
+  },
+  mounted() {
+    fetch("https://thurs-app.herokuapp.com/testimonials")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
 
-// import { ref } from "vue";
-//   import { MDBCarousel } from "mdb-vue-ui-kit";
-//   export default {
-//     components: {
-//       MDBCarousel
-//     },
-//     setup() {
-//       const items1 = [
-//         {
-//           src: "https://user-images.githubusercontent.com/7884263/27209183-2f456e10-51ff-11e7-9ec3-847038a795ea.png",
-//           alt: "Sergio Rodgers",
-//           label: "- Sergio Rodgers",
-//           caption: "In the short time I’ve know Chad I’ve come to see how good he is at adapting to new things and how good he is at socialising with peers. Chad is an amazing Individual that is committed and he would be an amazing asset to any company.Nulla vitae elit libero, a pharetra augue mollis interdum."
-//         },
-//         {
-//           src: "https://user-images.githubusercontent.com/7884263/27209183-2f456e10-51ff-11e7-9ec3-847038a795ea.png",
-//           alt: "Daryll Grainger",
-//           label: "- Daryll Grainger",
-//           caption: "Chad is great at what he does.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-//         },
-//         {
-//           src: "https://user-images.githubusercontent.com/7884263/27209183-2f456e10-51ff-11e7-9ec3-847038a795ea.png",
-//           alt: "Siyanda Ncamazana",
-//           label: "- Siyanda Ncamazana",
-//           caption:
-//             "Chad is an extremely hard worker and is open minded learning new things. He is not afraid of challenges and is willing to go the extra mile.Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-//         },
-//         {
-//           src: "https://user-images.githubusercontent.com/7884263/27209183-2f456e10-51ff-11e7-9ec3-847038a795ea.png",
-//           alt: "Siyabonga Mkhosana",
-//           label: "Siyabonga Mkhosana",
-//           caption:
-//             "Chad Hendricks has shown a capacity to learn quick and work efficiency, has a good work ethic and ability to work in a team. Very dependable and committed."
-//         },
-//         {
-//           src: "https://user-images.githubusercontent.com/7884263/27209183-2f456e10-51ff-11e7-9ec3-847038a795ea.png",
-//           alt: "Godwin Dzvapatsva",
-//           label: "- Godwin Dzvapatsva -Head of Curriculum and Learning",
-//           caption:
-//             "Chad has the potential to do well is his studies."
-//         }
-//       ];
-//       const carousel1 = ref(0);
-//       return {
-//         items1, carousel1
-//       };
-//     }
-//   };
+        this.testimonials = data;
+      });
+  },
+};
 
 </script>
 
 <style scoped>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #49474f
+}
+
+.testimonial-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto
+}
+
+.testimonials-wrapper {
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto
+}
+
+.testimonials-wrapper h4 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  position: relative;
+  padding: 30px;
+  color: #000;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 5px 5px 5px 0 rgba(23, 23, 25, .3)
+}
+
+.testimonials-blob,
+.testimonials-img {
+  border-radius: 100%
+}
+
+.testimonials-img {
+  position: relative;
+  left: 50%;
+  overflow: hidden!important;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-left: -50px;
+  box-shadow: 0 0 0 5px #171719;
+  transition: all ease-out .5s;
+  transform: translateY(-30%);
+  filter: brightness(2)
+}
+
+.testimonial-carousel .active .testimonials-img {
+  transform: translateY(0);
+  filter: brightness(1)
+}
+
+.testimonials-person-info {
+  text-align: center;
+  color: #fff
+}
+
+.testimonials-blob {
+  position: relative;
+  left: 80%;
+  width: 3px;
+  height: 3px;
+  transform: rotate(45deg)
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff
+  }
+  50% {
+    box-shadow: 0 15px 0 0 #fff, 0 0 0 0 #fff
+  }
+  100% {
+    opacity: 1;
+    background: #fff;
+    box-shadow: 0 15px 0 4px #fff, 0 35px 0 6px #fff
+  }
+}
+
+.testimonial-carousel .active .testimonials-blob {
+  transform-origin: 50% 50%;
+  animation: anim linear .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards
+}
+
+.testimonial-carousel {
+  overflow: hidden;
+  cursor: grab
+}
+
+.testimonial-carousel:active {
+  cursor: grabbing
+}
+
+.testimonial-carousel .owl-item {
+  overflow: hidden;
+  transition: all ease-out .3s;
+  transform: scale(.7);
+  opacity: 0
+}
+
+.testimonial-carousel .owl-item.active {
+  transform: scale(1);
+  opacity: 1
+}
+
+.testimonial-carousel .owl-next,
+.testimonial-carousel .owl-prev {
+  font-size: 13px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  padding: 0 10px;
+  transition: all ease-out .25s;
+  transform: translateY(-100%);
+  opacity: 1;
+  color: #fff;
+  border-radius: 3px;
+  background: #171719
+}
+
+.testimonial-carousel .owl-next:hover,
+.testimonial-carousel .owl-prev:hover {
+  color: #fff;
+  background: #615e6b
+}
+
+.testimonial-carousel .owl-prev {
+  left: 0
+}
+
+.testimonial-carousel .owl-next {
+  right: 0
+}
+
+.testimonial-carousel .owl-next.disabled,
+.testimonial-carousel .owl-prev.disabled {
+  opacity: 0
+}
 
 
 </style>

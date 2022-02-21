@@ -185,6 +185,9 @@ section {
 }
 
 @media (max-width: 1399px) {
+  #aboutpic {
+    margin: aut;
+  }
 }
 
 @media (min-width: 1400px) {
