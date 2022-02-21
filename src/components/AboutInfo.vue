@@ -82,7 +82,7 @@ export default {};
   text-align: center;
   border-radius: 50%;
   height: 60vh;
-  border: 7px crimson solid;
+  border: 10px crimson double;
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
