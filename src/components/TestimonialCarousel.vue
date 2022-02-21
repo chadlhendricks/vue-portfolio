@@ -4,11 +4,11 @@
      <div class="sections">
         <h1 class="headings">Testimonials</h1><br>
 
-     <div class="owl-carousel testimonial-carousel">
+     <div class="row">
   <!--   Start Testimonials -->
 
   <!--   Testimonial 1 -->
-  <div class="single-testimonial" v-for="(testimonial, index) in testimonials" :key="index">
+  <div class="col-md-4 mb-5" v-for="(testimonial, index) in testimonials" :key="index">
     <div class="testimonials-wrapper">
       <h4>{{testimonial.caption}}</h4>
       <div class="testimonials-blob"></div>
@@ -59,9 +59,8 @@ body {
 }
 
 .testimonial-carousel {
-  width: 100%;
   max-width: 1200px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .testimonials-wrapper {
@@ -71,6 +70,7 @@ body {
 }
 
 .testimonials-wrapper h4 {
+  height:200px;
   font-size: 15px;
   font-weight: 400;
   line-height: 23px;

@@ -14,7 +14,7 @@
           padding-top: 20px;
         "
       >
-        <div class="col-sm-4" v-for="(project, index) in projects" :key="index">
+        <div class="col-md-4 mb-5" v-for="(project, index) in projects" :key="index">
           <div
             class="card"
             style="

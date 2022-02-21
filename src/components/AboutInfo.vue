@@ -20,7 +20,7 @@
           <!-- ABOUT PAGE PARAGRAPHS -->
 
           <div
-            class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl"
+            class="col-md-4 mb-5"
             id="aboutparag"
           >
             <p
