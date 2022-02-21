@@ -8,7 +8,7 @@
         <div class="row" id="landingpagerows" style="padding-top: 20px">
           <!-- ABOUT PAGE PICTURE -->
 
-          <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
+          <div class="col-md-6 col-sm-12" id="imgdiv">
             <img
               src="../assets/images/about_images/chad.png"
               id="aboutpic"
@@ -20,7 +20,7 @@
           <!-- ABOUT PAGE PARAGRAPHS -->
 
           <div
-            class="col-md-4 mb-5"
+            class="col-md-6"
             id="aboutparag"
           >
             <p
@@ -74,11 +74,14 @@ export default {};
 </script>
 
 <style scoped>
+
+#imgdiv{
+  margin: auto;
+}
 #aboutpic {
   text-align: center;
-  height: 60vh;
-  width: 80%;
   border-radius: 50%;
+  height: 60vh;
   border: 7px crimson solid;
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
