@@ -14,7 +14,7 @@
                <a href="https://www.linkedin.com/in/chad-hendricks-a7984921b/" target="_blank"><i class="bi bi-linkedin" style="font-size: 40px; color: crimson; border: none;"></i></a>
                <a href="https://github.com/chadlhendricks" target="_blank"><i class="bi bi-github" style="font-size: 40px; color: crimson; border: none; margin-left: 10px;"></i></a><br>
 
-               <img src="../assets/images/logos/logo-1.png" id="landinglogo" style="width:150px; height: 150px; padding-top: 30px">
+               <img src="../assets/images/logos/logo-1.png" id="landinglogo" style="width:150px; height: 150px; margin-top: 30px; background-color: white; border-radius: 50%; padding: 10px">
            </div>
 
 <!-- LANDING PAGE PICTURE -->
