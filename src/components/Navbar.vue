@@ -72,7 +72,9 @@
   }
 
 .router-link-active {
-  color: #fca311ff
+  color: #fca311ff;
+  font-size: 19px;
+  font-weight: bold;
   }
 
 
