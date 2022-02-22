@@ -20,7 +20,7 @@
           <!-- ABOUT PAGE PARAGRAPHS -->
 
           <div
-            class="col-md-6"
+            class="col-md-6 col-sm-12"
             id="aboutparag"
           >
             <p
@@ -31,7 +31,7 @@
                 font-weight: bold;
               "
             >
-              BIO
+              Bio
             </p>
             <p style="text-align: start; font-size: 20px">
               I am a hard-working, inquisitive and creative-thinking individual.

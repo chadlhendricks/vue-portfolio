@@ -156,8 +156,22 @@ section {
   }
 }
 
-
 /* MEDIA QUERIES */
+
+@media (max-width: 350px) {
+  #aboutpic {
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  #aboutpic {
+    width: 380px;
+  }
+}
+
+@media (max-width: 540px) {
+}
 
 @media (max-width: 670px) {
   .sections {
@@ -171,9 +185,6 @@ section {
   #thursimg {
     display: none;
   }
-}
-
-@media (max-width: 540px) {
 }
 
 @media (max-width: 720px) {

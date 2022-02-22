@@ -86,7 +86,14 @@ body {
   box-shadow: 5px 5px 5px 0 rgba(23, 23, 25, .3)
 }
 
+.testimonials-wrapper h4:hover{
+  background: red;
+  color: white;
+  font-size: 18px;
+}
+
 .testimonials-blob,
+
 .testimonials-img {
   border-radius: 100%
 }
