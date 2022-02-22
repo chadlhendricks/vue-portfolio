@@ -158,22 +158,80 @@ section {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 350px) {
-  #aboutpic {
-    width: 100px;
+
+
+
+
+/* MIN MEDIA QUERIES */
+
+@media (min-width: 672px) {
+  #landingsection {
+    margin-left: 20px;
+    height: 500px;
+  }
+  #thursimg{
+    margin-left: 80px;
+  }
+  #landinglogo{
+    display: none
   }
 }
 
-@media (max-width: 400px) {
-  #aboutpic {
-    width: 380px;
+@media (min-width: 930px) {
+  #landingsection {
+    margin-left: 20px
   }
+}
+
+@media (min-width: 1088px) {
+  #landingsection {
+    margin-left: 190px
+  }
+  #thursimg {
+    margin-left: 220px;
+  }
+}
+
+@media (min-width: 1250px) {
+  #landingsection {
+    margin-left: 200px
+  }
+  #thursimg{
+
+  }
+}
+
+@media (min-width: 1400px) {
+  .sections {
+    margin-left: 12.5%;
+  }
+  #landingsection {
+    margin-left: 20px;
+    height: 700px;
+  }
+  #thursimg {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1404px) {
+  #landingsection {
+    margin-left: 0px
+  }
+}
+
+/* MAX MEDIA QUERIES */
+
+@media (max-width: 350px) {
+}
+
+@media (max-width: 400px) {
 }
 
 @media (max-width: 540px) {
 }
 
-@media (max-width: 670px) {
+@media (max-width: 671px) {
   .sections {
     margin-top: 60px;
   }
@@ -190,23 +248,24 @@ section {
 @media (max-width: 720px) {
 }
 
+@media (max-width: 767px) {
+
+  #aboutparag {
+    margin-left: 8px;
+  }
+}
+
 @media (max-width: 790px) {
   #landingpage {
     padding-left: 20px;
   }
 }
 
+
+
 @media (max-width: 960px) {
 }
 
 @media (max-width: 1399px) {
-  #aboutpic {
-    margin: aut;
-  }
-}
 
-@media (min-width: 1400px) {
-  .sections {
-    margin-left: 12.5%;
-  }
 }
