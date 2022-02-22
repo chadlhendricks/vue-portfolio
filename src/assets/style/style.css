@@ -222,10 +222,14 @@ section {
 
 /* MAX MEDIA QUERIES */
 
-@media (max-width: 350px) {
+@media (max-width: 290px) {
+  #aboutpic {
+    width: 270px;
+    height: 10vh;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 426px) {
 }
 
 @media (max-width: 540px) {
