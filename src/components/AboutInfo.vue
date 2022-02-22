@@ -88,6 +88,15 @@ export default {};
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
+@media (min-width: 1400px) {
+  .sections {
+    margin-left: 0;
+  }
+  #aboutpic {
+    margin-left: 200px;
+  }
+}
+
 @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);

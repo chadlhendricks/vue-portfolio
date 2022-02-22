@@ -164,6 +164,12 @@ section {
 
 /* MIN MEDIA QUERIES */
 
+@media (min-width: 430px) {
+  #aboutpic {
+    margin-left: 11%
+  }
+}
+
 @media (min-width: 672px) {
   #landingsection {
     margin-left: 20px;
@@ -174,6 +180,9 @@ section {
   }
   #landinglogo{
     display: none
+  }
+  #aboutpic {
+    margin-left: 80px;
   }
 }
 
@@ -218,18 +227,19 @@ section {
   #landingsection {
     margin-left: 0px
   }
+  
 }
 
 /* MAX MEDIA QUERIES */
 
 @media (max-width: 290px) {
-  #aboutpic {
-    width: 270px;
-    height: 10vh;
-  }
 }
 
 @media (max-width: 426px) {
+  #aboutpic {
+    width: 100%;
+    height: 50px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -256,6 +266,10 @@ section {
 
   #aboutparag {
     margin-left: 8px;
+  }
+
+  #aboutpic {
+    margin-bottom: 40px;
   }
 }
 
