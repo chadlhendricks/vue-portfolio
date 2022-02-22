@@ -81,7 +81,7 @@ export default {};
 #aboutpic {
   text-align: center;
   border-radius: 50%;
-  height: 60vh;
+  height: 50vh;
   border: 10px crimson double;
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
@@ -93,7 +93,7 @@ export default {};
     margin-left: 0;
   }
   #aboutpic {
-    margin-left: 200px;
+    margin-left: 300px;
   }
 }
 
